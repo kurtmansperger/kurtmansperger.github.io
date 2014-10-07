@@ -1,4 +1,4 @@
-kurtmansperger.github.io
+Kurt Mansperger
 ========================
 
 Personal Website
