@@ -1,4 +1,0 @@
-Kurt Mansperger
-========================
-
-Personal Website
