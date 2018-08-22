@@ -29,6 +29,11 @@ h2 {
   margin-bottom: 0;
 }
 
+.skill-header {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+}
+
 .skill-section {
   padding: 0.5rem 0;
   margin-bottom: 0;
@@ -55,6 +60,10 @@ h5 {
   font-size: 1.2rem;
   letter-spacing: .2rem;
   font-weight: 600;
+}
+
+.icon {
+  color: #999;
 }
 
 .heading-font-size {
