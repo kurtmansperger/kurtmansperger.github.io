@@ -3,7 +3,7 @@
 }
 
 .header {
-  margin-top: 6rem;
+  margin-top: 12rem;
   text-align: center;
 }
 
@@ -81,7 +81,7 @@ h5 {
 
 @media (min-width: 550px) {
   .header {
-    margin-top: 6rem;
+    margin-top: 12rem;
   }
 
   .detail-section {
