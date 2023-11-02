@@ -30,6 +30,7 @@ h2 {
 
 p {
   font-weight: 500;
+  font-size: 1.75rem;
 }
 
 h6 {
@@ -57,7 +58,7 @@ h6 {
 
 h3 {
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.75rem;
   letter-spacing: .2rem;
   font-weight: 600;
 }
