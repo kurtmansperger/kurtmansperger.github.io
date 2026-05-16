@@ -1,0 +1,12 @@
+---
+import type { Role } from '../data/resume';
+const { role } = Astro.props as { role: Role };
+---
+<article class="role">
+  <div class="role-head">
+    <h3 class="role-title">{role.title}</h3>
+    <span class="role-dates">{role.dates}</span>
+  </div>
+  <p class="role-org">{role.org}</p>
+  {role.body.map((p) => <p>{p}</p>)}
+</article>
