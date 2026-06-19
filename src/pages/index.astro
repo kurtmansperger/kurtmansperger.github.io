@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
 import SectionHeader from '../components/SectionHeader.astro';
 import RoleCard from '../components/RoleCard.astro';
 import Download from '../components/icons/Download.astro';
 import Mail from '../components/icons/Mail.astro';
 import LinkedIn from '../components/icons/LinkedIn.astro';
+import avatar from '../assets/profile.png';
 import {
   profile,
   experience,
@@ -20,12 +22,14 @@ const description =
 ---
 <BaseLayout title={title} description={description}>
   <header class="hero" id="top">
-    <img
+    <Image
       class="avatar"
-      src={profile.avatar}
+      src={avatar}
       alt={`Portrait of ${profile.name}`}
-      width="288"
-      height="288"
+      width={144}
+      height={144}
+      densities={[1, 2]}
+      loading="eager"
     />
     <h1>{profile.name}</h1>
     <p class="tagline">{profile.tagline}</p>
