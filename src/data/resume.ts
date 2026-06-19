@@ -1,8 +1,8 @@
 export const profile = {
   name: 'Kurt Mansperger',
   tagline: 'Technology Leader · Digital Transformation, Data & AI',
-  bio: "Technology leader with 18+ years of experience in program management, data strategy, and digital transformation. I lead projects to solve complex data challenges, optimize enterprise systems, and leverage AI for business insights — most recently at Private Equity–backed companies, and previously as CTO of the Boston Public Library.",
-  location: 'Greater Boston',
+  bio: 'Technology leader with 18+ years of experience leading high-impact digital transformations — from architecting a billion-dollar SaaS billing system to modernizing technology for a 500-person organization. I excel at managing distributed teams, streamlining operations, and aligning technology strategy with business goals to drive measurable growth.',
+  location: 'Boston, MA',
   email: 'kurt.mansperger@gmail.com',
   linkedin: 'https://www.linkedin.com/in/kurtmansperger',
   resumePdf: '/pdf/Kurt%20Mansperger%20Resume.pdf',
@@ -19,22 +19,27 @@ export type Role = {
 
 export const experience: Role[] = [
   {
-    title: 'Data Architect',
+    title: 'Delivery Manager',
     org: 'Techtorch',
     dates: 'May 2024 — Present',
     body: [
-      'Lead Salesforce and data transformation initiatives for Private Equity–owned companies with 1,000+ employees — enhancing data integrity, automating workflows, and identifying revenue leakage to drive operational efficiency and growth.',
+      'Directed technology transformations for PE-backed SaaS companies (500+ employees), improving data integrity, accelerating reporting cycles, and providing board-level visibility into ARR, renewals, and operational KPIs.',
+      'Led data migration remediation for a billion-dollar SaaS company — identifying missed billings, consolidating duplicate subscriptions, correcting invalid pricing, and improving governance to support strong data quality ongoing.',
+      'Managed multi-country offshore teams in the development of data warehouses, coaching engineers to understand the "why" behind their work and approach problems holistically — driving higher quality output and increased efficiency.',
+      'Designed and implemented a scalable, repeatable system to identify and de-duplicate Salesforce accounts, executing a phased rollout with clear communication to minimize risk and proactively manage impacts to key metrics.',
+      'Developed an AI-powered contract intelligence tool that transforms unstructured PDFs into structured contract terms to validate subscription and billing data, uncovering revenue leakage across multiple clients.',
     ],
   },
   {
     title: 'Principal Technology Consultant',
-    org: 'Independent Consulting',
-    dates: 'Jun 2023 — May 2024',
+    org: 'Mansperger Makings',
+    dates: 'Jul 2023 — May 2024',
     body: [
-      'Founded and scaled a consulting practice focused on technology strategy, data transformation, and operational excellence across diverse industries — from improving critical sales data and processes to identifying contractual risks and revenue leakage with AI.',
-      'Developed AI-driven solutions to analyze unstructured data and surface contractual risks and revenue leakage for clients.',
-      'Architected and configured core systems for five organizations to optimize critical business processes, increasing efficiency, revenue capture, and reporting accuracy — saving one organization 300+ hours annually.',
-      'Conducted a comprehensive security assessment and implemented improvements, significantly strengthening the security posture and compliance of a campaign organization with 30,000+ staff.',
+      'Acted as a fractional CTO for multiple clients, providing end-to-end technology strategy and operational leadership to drive growth, efficiency, and customer impact.',
+      'Guided startups on product-market fit and technology feasibility, while advising established organizations on scaling operations and improving customer experience.',
+      'Conducted enterprise-wide security assessments, improved configuration of core systems, and implemented targeted training programs — materially improving the security posture of a 30,000+ staffing organization.',
+      'Designed and implemented core systems and cross-platform integrations for five organizations, standardizing processes, enhancing reporting, and saving hundreds of hours annually.',
+      'Developed an AI-driven solution that analyzes public data to uncover strategic opportunities and flag potential risks for a top-tier international client.',
     ],
   },
   {
@@ -42,13 +47,15 @@ export const experience: Role[] = [
     org: 'Boston Public Library',
     dates: 'Mar 2019 — Jun 2023',
     body: [
-      'Drove strategy and operational oversight for both public and staff technology across 27 locations, ~500 staff, and several partner organizations. Oversaw 20+ staff positions and managed a ~$5M annual budget spanning federal, state, consortium, city, endowment, and donor funding sources.',
-      'Established and implemented a new vision and strategic plan for the IT department, and led high-priority, cross-functional initiatives from planning through staff-wide communication and implementation.',
-      'Led recovery, communications, and security hardening after a ransomware attack; led the staff transition to remote work during the COVID-19 pandemic (hardware deployment, collaboration tools, virtual phone system, and virtual programming tools).',
-      'Maximized impact and funding efficiency through digital-equity initiatives — expanding the WiFi hotspot lending program, launching a Chromebook lending program, expanding exterior WiFi, and supporting virtual programming.',
-      "Secured $3.4M in federal funding and developed a program to bridge Boston's digital divide in partnership with the Boston Housing Authority.",
-      'Identified wasteful processes across the library and led teams in designing streamlined solutions that saved hundreds of hours monthly.',
-      'Developed a transition plan and guided the incoming CTO after completing an executive search, enabling a seamless handoff.',
+      "Directed technology strategy and operations for 500 staff across 27 locations, led an IT department of 5 managers and 20 IT staff, and managed a $5M annual budget — enhancing service delivery to the organization's 4 million+ customers.",
+      'Crafted and executed a forward-thinking technology strategy, enhancing both staff efficiency and customer service, and repositioning the IT department as a key business partner.',
+      'Led the transition to remote work for 500+ staff during COVID-19 by procuring, architecting, and rolling out new systems and processes to ensure work continuity and long-term efficiencies.',
+      'Secured $3.4M in federal funding and championed an effort to bridge the digital divide by deploying 6,200 computers and 3,000 routers in partnership with the Boston Housing Authority to reach those most in need.',
+      'Led the recovery, communications, and security hardening effort in partnership with Microsoft DART and federal intelligence agencies following a ransomware attack.',
+      'Led the development and rollout of an analytics platform (PowerBI via Azure Data Factory) saving 1,500+ hours of data collection and processing annually, improving accuracy and visibility, and fostering a culture of strategic decision-making.',
+      'Designed and led the implementation of a shift-filling app to save supervisors ~30 hours a week while providing the structure to abide by union agreements (AirTable, Twilio, single-page Next.js app).',
+      'Built a model-driven application to improve social worker data collection and analysis, providing a more holistic view of patron interactions and better metrics for funding reports and planning (MS Power Platform).',
+      'Revitalized team dynamics by instilling a culture of empathy, accountability, results, and operational excellence — reducing meeting time by ~400 hours annually and boosting productivity and engagement.',
     ],
   },
   {
@@ -56,85 +63,33 @@ export const experience: Role[] = [
     org: 'First Step Coding',
     dates: 'Nov 2016 — Mar 2019',
     body: [
-      'Top-rated beginner-focused coding course that helped hundreds of individuals improve their technical skills and advance their careers. Refined customer experiences, streamlined operations, and mentored students.',
-      'Grew First Step Coding to over $400K in annual revenue with 500+ graduates.',
-      'Refined and automated parts of the curriculum and business to improve customer experience, providing alternate learning methods while minimizing operational overhead.',
-      'Sourced, trained, and managed exceptional instructors across 4 cities and online while maintaining a Net Promoter Score above 76.',
-      'Forged partnerships with leading bootcamps, mentored students through career decisions, and taught numerous cohorts for both our introductory coding and data analytics courses.',
+      'Bootstrapped an educational startup to $400K+ in annual revenue while providing over 500 students with the core foundational skills needed for transitioning to a successful career in tech.',
+      'Forged new partnerships with leading bootcamps, mentored students through career decisions, and taught 15+ cohorts for both our introductory coding and data analytics courses.',
+      'Sourced, trained, and managed exceptional instructors and TAs to support courses across 4 cities and online while maintaining an overall NPS above 76.',
+      'Refined and automated core parts of the curriculum and business operations to improve the customer experience and provide alternate learning methods to best suit student needs while minimizing operational overhead.',
     ],
   },
   {
-    title: 'Senior Solution Architect',
-    org: 'Intevity',
-    dates: 'May 2015 — May 2017',
+    title: 'Senior Project Manager & Solution Architect',
+    org: 'Intevity (formerly Twin Technologies)',
+    dates: 'May 2013 — May 2017',
     body: [
-      'Developed a new business line in subscription billing and revenue management by building key partner and client relationships.',
-      'Architected a highly scalable subscription billing solution fulfilling complex requirements across global B2B and B2C businesses for a billion-dollar conglomerate.',
-      'Led a platform assessment including a gap analysis of subscription billing solutions and a solution blueprint detailing how complex business needs would be addressed in Aria Systems and Zuora.',
-      'Defined requirements for every interaction point with the billing system — from a custom Quote-to-Cash workflow in Salesforce to eCommerce, self-service, and provisioning across many products, and handling complex legal and accounting requirements in the US, Europe, and Latin America.',
-      'Led 20+ consultants, partner, and client resources (onshore and offshore) through end-to-end solution architecture design and implementation with Aria Systems at the core.',
+      'Managed agile development teams, led requirements gathering, and owned strategic stakeholder relationships on custom development projects worth over $1.5M annually (financial services, technology, retail, and startup industries).',
+      "Architected the overhaul of a $1B+ SaaS conglomerate's billing system post-acquisition — enhancing scalability, agility, and flexibility — generating over $10M in annual revenue growth, reducing technical debt, and supporting strategic growth.",
+      'Developed a dashboard for improved visibility into KPIs and forecast projections of projects across the company.',
+      "Launched regular 'lunch and learn' sessions to increase collaboration and knowledge sharing across the organization.",
     ],
   },
   {
-    title: 'Senior Project Manager',
-    org: 'Intevity',
-    dates: 'May 2013 — Apr 2015',
-    body: [
-      'Owned strategic client and partner relationships while coaching and managing agile teams on financial services, retail, and early-stage startup custom development projects worth over $1.5M annually.',
-      'Managed multiple projects simultaneously — from creating work plans to staffing and managing development teams to tracking and reporting on engagement status, risks, and economics.',
-    ],
-  },
-  {
-    title: 'Technology Consultant',
+    title: 'Senior Technology Consultant',
     org: 'Deloitte Consulting',
-    dates: 'Jun 2011 — May 2013',
+    dates: 'Jun 2007 — May 2013',
     body: [
-      'Managed teams of up to eight developers through the entire SDLC building large-scale eligibility systems for states — Medicaid, Long Term Care (LTC), Food Stamps (SNAP), and Unemployment Insurance.',
-      'Managed a testing team of six offshore resources who developed and routinely executed 1,300+ test cases.',
+      'Managed up to 8-person development teams and led requirements gathering in the implementation of state-wide eligibility systems (Medicaid, Unemployment, Nutritional Assistance, etc.) for various states.',
       'Led the development of an automated regression test suite, saving 400+ hours annually and elevating software quality.',
-    ],
-  },
-  {
-    title: 'Business Technology Analyst',
-    org: 'Deloitte Consulting',
-    dates: 'Jun 2008 — Jun 2011',
-    body: [
-      'Analyzed pricing benchmarks and developed a new pricing model for all services across several hospitals, increasing profitability by $3.2 million.',
-      'Pioneered the configuration management framework for all Java projects in a mid-western state — from environment setup to build and deployment automation — with detailed supporting documentation.',
-      'Authored and delivered comprehensive productivity-tool and user-interface design classes for 200+ colleagues.',
-    ],
-  },
-  {
-    title: 'Summer Scholar',
-    org: 'Deloitte Consulting',
-    dates: 'Jun 2007 — Aug 2007',
-    body: [
-      'Developed business requirements and design for a contact-management solution within a large government implementation, and developed technical requirements and supporting documentation for an Enterprise Service Bus.',
-    ],
-  },
-  {
-    title: 'Threat and Vulnerability Management (Ethical Hacking)',
-    org: 'PricewaterhouseCoopers',
-    dates: 'May 2006 — Aug 2006',
-    body: [
-      'Assessed the security of systems for one of the largest credit unions in the United States and made recommendations to protect against future attacks.',
-      'Completed a SOX assessment for a billion-dollar hospitality holding corporation.',
-    ],
-  },
-  {
-    title: 'Sales Representative',
-    org: 'Vector Marketing',
-    dates: 'May 2005 — Aug 2005',
-    body: [
-      'Streamlined the door-to-door cutlery sales process to optimize revenue and minimize lost opportunities. Achieved top office sales several weeks throughout the summer.',
-    ],
-  },
-  {
-    title: 'Financial Analyst',
-    org: 'JetBlue Airways',
-    dates: 'May 2004 — Aug 2004',
-    body: [
-      'Analyzed budgets across every department and identified opportunities for cost reduction. Reviewed findings and recommended improvements during multi-day meetings with the President, COO, and department VPs.',
+      'Created a new pricing strategy and tracking model for a network of hospitals, increasing annual profitability by $3.2M.',
+      'Delivered dynamic productivity and design classes, enhancing the abilities of 200+ consultants across the firm.',
+      'Advanced from Summer Scholar to Business Technology Analyst to Consultant to Senior Consultant.',
     ],
   },
 ];
@@ -168,13 +123,13 @@ export type Education = {
 export const education: Education[] = [
   {
     degree: 'B.S. Computer Engineering',
-    org: 'University of Maryland — A. James Clark School of Engineering · 2003–2008',
-    body: 'Activities: Solar Decathlon, IEEE, Intramural Soccer, Racquetball, Tennis.',
+    org: 'University of Maryland, College Park',
+    body: 'Institute of Electrical and Electronic Engineers (IEEE) · Solar Decathlon (Smart Home Team)',
   },
   {
     degree: 'B.S. Finance',
-    org: 'University of Maryland — Robert H. Smith School of Business · 2003–2007',
-    body: 'Activities: QUEST Honors Fellows Program, Hinman CEOs, Research Fellows Program, Financial Services Fellows Program, College Park Environmental Group, Finance, Banking & Investment Society.',
+    org: 'University of Maryland, College Park',
+    body: 'QUEST Honors Program (Six Sigma Fundamentals) · Hinman CEOs (Center for Entrepreneurship)',
   },
 ];
 
@@ -199,10 +154,24 @@ export const skills: SkillGroup[] = [
   },
   {
     name: 'Certifications',
-    items: ['ITIL v3 Foundation', 'Continuous Innovation Trainer'],
+    items: [
+      'Leanstack Continuous Innovation Coach',
+      'Inquiry Method Life Coach',
+      'Agile Scrum Master',
+      'ITIL Fundamentals',
+    ],
   },
   {
     name: 'Languages',
     items: ['English (Native)', 'Spanish (Limited Working)'],
   },
+];
+
+export const personal: string[] = [
+  'Created memorable culinary experiences',
+  'Refined negotiation tactics with my kindergartner',
+  "Transformed a 1930's cottage into a home",
+  'Reclaimed wood and gave it a new life',
+  'Biked across New England',
+  'Sailed our home from New York to Boston',
 ];
