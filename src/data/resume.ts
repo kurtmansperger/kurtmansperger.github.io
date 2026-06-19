@@ -6,7 +6,6 @@ export const profile = {
   email: 'kurt.mansperger@gmail.com',
   linkedin: 'https://www.linkedin.com/in/kurtmansperger',
   resumePdf: '/pdf/Kurt%20Mansperger%20Resume.pdf',
-  avatar: '/images/profile.png',
   siteUrl: 'https://kurtmansperger.com',
 };
 
