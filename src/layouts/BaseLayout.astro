@@ -16,7 +16,9 @@ const jsonLd = {
   name: profile.name,
   url: profile.siteUrl,
   image: ogImage,
-  jobTitle: 'Technology Executive',
+  jobTitle: 'Data Architect',
+  worksFor: { '@type': 'Organization', name: 'Techtorch' },
+  address: { '@type': 'PostalAddress', addressLocality: 'Greater Boston' },
   email: `mailto:${profile.email}`,
   sameAs: [profile.linkedin],
   alumniOf: [
