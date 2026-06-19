@@ -19,7 +19,7 @@ export type Role = {
 
 export const experience: Role[] = [
   {
-    title: 'Delivery Manager',
+    title: 'Senior Data Architect',
     org: 'Techtorch',
     dates: 'May 2024 — Present',
     body: [
@@ -160,10 +160,6 @@ export const skills: SkillGroup[] = [
       'Agile Scrum Master',
       'ITIL Fundamentals',
     ],
-  },
-  {
-    name: 'Languages',
-    items: ['English (Native)', 'Spanish (Limited Working)'],
   },
 ];
 
