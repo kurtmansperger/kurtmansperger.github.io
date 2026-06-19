@@ -11,6 +11,7 @@ import {
   volunteer,
   education,
   skills,
+  personal,
 } from '../data/resume';
 
 const title = `${profile.name} — ${profile.tagline}`;
@@ -73,6 +74,13 @@ const description =
         </ul>
       </div>
     ))}
+  </section>
+
+  <section id="personal" aria-labelledby="personal-heading">
+    <SectionHeader eyebrow="Outside Work" title="Personal Accomplishments" id="personal-heading" />
+    <ul class="chips">
+      {personal.map((p) => <li class="chip">{p}</li>)}
+    </ul>
   </section>
 
   <section id="contact" aria-labelledby="contact-heading">
