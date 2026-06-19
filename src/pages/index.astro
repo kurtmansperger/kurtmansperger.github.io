@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import RoleCard from '../components/RoleCard.astro';
+import Download from '../components/icons/Download.astro';
+import Mail from '../components/icons/Mail.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro';
+import {
+  profile,
+  experience,
+  volunteer,
+  education,
+  skills,
+} from '../data/resume';
+
+const title = `${profile.name} — ${profile.tagline}`;
+const description =
+  'Kurt Mansperger is a technology executive who architects large-scale systems and modernizes operations for organizations of 500+ staff.';
+---
+<BaseLayout title={title} description={description}>
+  <header class="hero" id="top">
+    <img
+      class="avatar"
+      src={profile.avatar}
+      alt={`Portrait of ${profile.name}`}
+      width="288"
+      height="288"
+    />
+    <h1>{profile.name}</h1>
+    <p class="tagline">{profile.tagline}</p>
+    <p class="bio">{profile.bio}</p>
+    <div class="cta">
+      <a class="btn primary" href={profile.resumePdf} target="_blank" rel="noopener">
+        <Download /> Résumé
+      </a>
+      <a class="btn" href={`mailto:${profile.email}`}>
+        <Mail /> Email
+      </a>
+      <a class="btn" href={profile.linkedin} target="_blank" rel="noopener">
+        <LinkedIn /> LinkedIn
+      </a>
+    </div>
+  </header>
+
+  <section id="experience" aria-labelledby="experience-heading">
+    <SectionHeader eyebrow="Career" title="Experience" id="experience-heading" />
+    {experience.map((role) => <RoleCard role={role} />)}
+  </section>
+
+  <section id="volunteer" aria-labelledby="volunteer-heading">
+    <SectionHeader eyebrow="Giving Back" title="Volunteer" id="volunteer-heading" />
+    {volunteer.map((role) => <RoleCard role={role} />)}
+  </section>
+
+  <section id="education" aria-labelledby="education-heading">
+    <SectionHeader eyebrow="Academic" title="Education" id="education-heading" />
+    {education.map((e) => (
+      <div class="edu">
+        <h3>{e.degree}</h3>
+        <p class="role-org">{e.org}</p>
+        <p>{e.body}</p>
+      </div>
+    ))}
+  </section>
+
+  <section id="skills" aria-labelledby="skills-heading">
+    <SectionHeader eyebrow="Toolkit" title="Skills" id="skills-heading" />
+    {skills.map((g) => (
+      <div class="chip-group">
+        <h3>{g.name}</h3>
+        <ul class="chips">
+          {g.items.map((s) => <li class="chip">{s}</li>)}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <section id="contact" aria-labelledby="contact-heading">
+    <SectionHeader eyebrow="Get in touch" title="Contact" id="contact-heading" />
+    <div class="contact-card">
+      <p>
+        Check out my <a href={profile.resumePdf} target="_blank" rel="noopener">résumé</a>,
+        send me an <a href={`mailto:${profile.email}`}>email</a>, or message me on
+        <a href={profile.linkedin} target="_blank" rel="noopener">LinkedIn</a>.
+      </p>
+      <div class="icons">
+        <a href={`mailto:${profile.email}`} aria-label="Email Kurt">
+          <Mail />
+        </a>
+        <a href={profile.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <LinkedIn />
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

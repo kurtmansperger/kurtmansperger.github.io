@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+import { profile } from '../data/resume';
+
+const { title, description } = Astro.props as {
+  title: string;
+  description: string;
+};
+
+const canonical = new URL(Astro.url.pathname, profile.siteUrl).href;
+const ogImage = new URL('/images/profile.png', profile.siteUrl).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: profile.name,
+  url: profile.siteUrl,
+  image: ogImage,
+  jobTitle: 'Technology Executive',
+  email: `mailto:${profile.email}`,
+  sameAs: [profile.linkedin],
+  alumniOf: [
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'University of Maryland — A. James Clark School of Engineering',
+    },
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'University of Maryland — Robert H. Smith School of Business',
+    },
+  ],
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={profile.name} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)" />
+
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="profile:first_name" content="Kurt" />
+    <meta property="profile:last_name" content="Mansperger" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="topnav" aria-label="Primary">
+      <div class="topnav-inner">
+        <a href="#top" class="brand">{profile.name}</a>
+        <ul>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> {profile.name}</p>
+    </footer>
+
+    <script is:inline>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
