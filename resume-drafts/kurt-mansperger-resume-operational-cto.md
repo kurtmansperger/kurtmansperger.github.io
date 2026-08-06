@@ -76,3 +76,12 @@ Operational technology executive with 18+ years putting reliable foundations und
 ## Certifications
 
 Leanstack Continuous Innovation Coach · Inquiry Method Life Coach · Agile Scrum Master · ITIL Fundamentals
+
+## Personal Accomplishments
+
+- Created memorable culinary experiences
+- Refined negotiation tactics with my kindergartner
+- Transformed a 1930's cottage into a home
+- Reclaimed wood and gave it a new life
+- Biked across New England
+- Sailed our home from New York to Boston
