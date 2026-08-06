@@ -13,7 +13,10 @@ Operational technology executive with 18+ years building the systems that growin
 ### Senior Data Architect | Techtorch
 *May 2024 – Present | Boston, MA*
 
-- Direct technology and data transformations for PE-backed SaaS companies (500+ employees), improving data integrity, accelerating reporting cycles, and giving boards reliable visibility into ARR, renewals, and operational KPIs.
+- Direct technology and data transformations for PE-backed SaaS companies (500+ employees), improving data integrity, accelerating reporting cycles, and giving boards reliable visibility into ARR, renewals, and operational KPIs, including month-end close processes that unify customer records across ERP and CRM systems (NetSuite, Sage, Salesforce).
+- Technical lead for an AI-powered data ingestion and entity-matching platform at a media-measurement company that processes 270,000 files daily, projected to cut manual file review by 98% and manual match work by 95% (roughly $2M in annual savings); presented working demos to the client's board and investors.
+- Built and refined a natural-language query interface that lets the client's non-technical customers answer complex data questions without writing SQL, and led user acceptance testing with their analysts.
+- Designed the data architecture for a multi-site healthcare organization (Snowflake, Fivetran), selecting ingestion tooling that meets HIPAA requirements and prioritizing KPIs with the executive team.
 - Led data-migration remediation for a billion-dollar SaaS company: identified missed billings, consolidated duplicate subscriptions, corrected invalid pricing, and installed governance to keep data quality high after the fix.
 - Managed multi-country offshore teams building data warehouses, coaching engineers to understand the "why" behind their work and approach problems holistically, driving higher-quality output and increased efficiency.
 - Designed a scalable, repeatable system to de-duplicate Salesforce accounts, executed as a phased rollout with clear communication to minimize risk to live operations and key metrics.
