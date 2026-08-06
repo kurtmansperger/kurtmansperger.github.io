@@ -4,7 +4,7 @@ Boston, MA · 845-797-0506 · kurt.mansperger@gmail.com · linkedin.com/in/kurtm
 
 ## Summary
 
-Operational technology executive with 18+ years building the systems that growing, people-heavy organizations run on. As CTO of the Boston Public Library I owned technology for 500 unionized staff across 27 locations; as a fractional CTO I hardened security for a 30,000-person staffing firm; earlier in my career I architected the billing system of record for a $1B+ SaaS company. My work centers on data people trust, workforce tools that respect labor rules, deliberate buy-vs-build decisions, and teams trained and documented well enough to outlast me.
+Technology executive with 18+ years building the systems that growing organizations run on. Today, as a Senior Data Architect, I give private-equity-backed companies reliable foundations: governed data pipelines, unified customer records, and board-level reporting they can act on. As CTO of the Boston Public Library, I owned technology and security for 500 unionized staff across 27 locations on a $5M budget. Earlier in my career I architected the billing system of record for a $1B+ SaaS company. My work centers on data people trust, user experiences that stick, and teams documented and trained well enough to operate without me.
 
 **Focus areas:** Systems of record & ERP selection · Workforce & scheduling systems · Data warehousing & BI (Power BI, Azure Data Factory) · Security & incident response · AI strategy & governance · Buy-vs-build & vendor management
 
