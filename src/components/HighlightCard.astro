@@ -1,0 +1,24 @@
+---
+import type { Highlight } from '../data/resume';
+const { item } = Astro.props as { item: Highlight };
+---
+<article class="highlight">
+  <h3>{item.title}</h3>
+  <dl>
+    <div>
+      <dt>Context</dt>
+      <dd>{item.context}</dd>
+    </div>
+    <div>
+      <dt>What I did</dt>
+      <dd>{item.work}</dd>
+    </div>
+    <div>
+      <dt>Outcome</dt>
+      <dd>{item.outcome}</dd>
+    </div>
+  </dl>
+  <ul class="chips small" aria-label="Tools and methods">
+    {item.stack.map((s) => <li class="chip">{s}</li>)}
+  </ul>
+</article>

@@ -3,12 +3,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import SectionHeader from '../components/SectionHeader.astro';
 import RoleCard from '../components/RoleCard.astro';
+import HighlightCard from '../components/HighlightCard.astro';
 import Download from '../components/icons/Download.astro';
 import Mail from '../components/icons/Mail.astro';
 import LinkedIn from '../components/icons/LinkedIn.astro';
+import GitHub from '../components/icons/GitHub.astro';
 import avatar from '../assets/profile.png';
 import {
   profile,
+  highlights,
   experience,
   volunteer,
   education,
@@ -16,9 +19,9 @@ import {
   personal,
 } from '../data/resume';
 
-const title = `${profile.name} — ${profile.tagline}`;
+const title = `${profile.name} — ${profile.title}, ${profile.org}`;
 const description =
-  'Kurt Mansperger is a technology leader with 18+ years of experience in program management, data strategy, and digital transformation — leading data, AI, and Salesforce initiatives for Private Equity–backed companies.';
+  'Kurt Mansperger is VP, Data & Reporting at TechTorch, leading data architecture, analytics, and applied-AI delivery for PE-backed SaaS companies. Former CTO of the Boston Public Library and architect of a $1B+ SaaS billing platform.';
 ---
 <BaseLayout title={title} description={description}>
   <header class="hero" id="top">
@@ -37,7 +40,7 @@ const description =
     <p class="bio">{profile.bio}</p>
     <div class="cta">
       <a class="btn primary" href={profile.resumePdf} target="_blank" rel="noopener">
-        <Download /> Résumé
+        <Download /> Résumé (PDF)
       </a>
       <a class="btn" href={`mailto:${profile.email}`}>
         <Mail /> Email
@@ -45,28 +48,25 @@ const description =
       <a class="btn" href={profile.linkedin} target="_blank" rel="noopener">
         <LinkedIn /> LinkedIn
       </a>
+      <a class="btn" href={profile.github} target="_blank" rel="noopener">
+        <GitHub /> GitHub
+      </a>
     </div>
+    <p class="hero-alt">
+      Prefer a web page? <a href="/resume">Read the résumé in your browser</a>.
+    </p>
   </header>
+
+  <section id="work" aria-labelledby="work-heading">
+    <SectionHeader eyebrow="Selected Work" title="Problems I've solved" id="work-heading" />
+    <div class="highlights">
+      {highlights.map((item) => <HighlightCard item={item} />)}
+    </div>
+  </section>
 
   <section id="experience" aria-labelledby="experience-heading">
     <SectionHeader eyebrow="Career" title="Experience" id="experience-heading" />
     {experience.map((role) => <RoleCard role={role} />)}
-  </section>
-
-  <section id="volunteer" aria-labelledby="volunteer-heading">
-    <SectionHeader eyebrow="Giving Back" title="Volunteer" id="volunteer-heading" />
-    {volunteer.map((role) => <RoleCard role={role} />)}
-  </section>
-
-  <section id="education" aria-labelledby="education-heading">
-    <SectionHeader eyebrow="Academic" title="Education" id="education-heading" />
-    {education.map((e) => (
-      <div class="edu">
-        <h3>{e.degree}</h3>
-        <p class="role-org">{e.org}</p>
-        <p>{e.body}</p>
-      </div>
-    ))}
   </section>
 
   <section id="skills" aria-labelledby="skills-heading">
@@ -81,6 +81,22 @@ const description =
     ))}
   </section>
 
+  <section id="education" aria-labelledby="education-heading">
+    <SectionHeader eyebrow="Academic" title="Education" id="education-heading" />
+    {education.map((e) => (
+      <div class="edu">
+        <h3>{e.degree}</h3>
+        <p class="role-org">{e.org}</p>
+        <p>{e.body}</p>
+      </div>
+    ))}
+  </section>
+
+  <section id="volunteer" aria-labelledby="volunteer-heading">
+    <SectionHeader eyebrow="Giving Back" title="Board & Volunteer" id="volunteer-heading" />
+    {volunteer.map((role) => <RoleCard role={role} />)}
+  </section>
+
   <section id="personal" aria-labelledby="personal-heading">
     <SectionHeader eyebrow="Outside Work" title="Personal Accomplishments" id="personal-heading" />
     <ul class="chips">
@@ -92,9 +108,10 @@ const description =
     <SectionHeader eyebrow="Get in touch" title="Contact" id="contact-heading" />
     <div class="contact-card">
       <p>
-        Check out my <a href={profile.resumePdf} target="_blank" rel="noopener">résumé</a>,
-        send me an <a href={`mailto:${profile.email}`}>email</a>, or message me on
-        <a href={profile.linkedin} target="_blank" rel="noopener">LinkedIn</a>.
+        Download my <a href={profile.resumePdf} target="_blank" rel="noopener">résumé</a>,
+        send me an <a href={`mailto:${profile.email}`}>email</a>, or find me on
+        <a href={profile.linkedin} target="_blank" rel="noopener">LinkedIn</a> and
+        <a href={profile.github} target="_blank" rel="noopener">GitHub</a>.
       </p>
       <div class="icons">
         <a href={`mailto:${profile.email}`} aria-label="Email Kurt">
@@ -102,6 +119,9 @@ const description =
         </a>
         <a href={profile.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn profile">
           <LinkedIn />
+        </a>
+        <a href={profile.github} target="_blank" rel="noopener" aria-label="GitHub profile">
+          <GitHub />
         </a>
       </div>
     </div>

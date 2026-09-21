@@ -8,5 +8,6 @@ const { role } = Astro.props as { role: Role };
     <span class="role-dates">{role.dates}</span>
   </div>
   <p class="role-org">{role.org}</p>
+  {role.note && <p class="role-note">{role.note}</p>}
   {role.body.map((p) => <p>{p}</p>)}
 </article>
