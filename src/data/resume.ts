@@ -7,7 +7,7 @@ export const profile = {
   title: 'VP, Data & Reporting',
   org: 'TechTorch',
   tagline: 'VP, Data & Reporting at TechTorch · Data platforms, analytics, and applied AI',
-  bio: 'I lead the Data & Reporting practice at TechTorch, where we fix the data problems that stop PE-backed companies from trusting their numbers: duplicate Salesforce records, broken billing migrations, and reporting that cannot survive a board meeting. Over 19 years I have architected a billion-dollar SaaS billing platform, run technology for a 500-person institution as CTO, and shipped LLM-based tools that turn thousands of contracts into structured, reconciled data. I do my best work where data engineering, AI, and real business stakes meet.',
+  bio: 'I am VP, Data & Reporting at TechTorch, where I report to the president and lead the initiatives that grow our data practice. We fix the data problems that stop PE-backed companies from trusting their numbers: duplicate Salesforce records, broken billing migrations, and reporting that cannot survive a board meeting. Over 19 years I have architected a billion-dollar SaaS billing platform, run technology for a 500-person institution as CTO, and shipped LLM-based tools that turn thousands of contracts into structured, reconciled data. I do my best work where data engineering, AI, and real business stakes meet.',
   location: 'Boston, MA',
   email: 'kurt.mansperger@gmail.com',
   phone: '845-797-0506',
@@ -101,7 +101,7 @@ export const experience: Role[] = [
     location: 'Boston, MA',
     note: 'Joined as Senior Data Architect; promoted to VP, Data & Reporting',
     body: [
-      'Lead the Data & Reporting practice for PE-backed SaaS companies (500+ employees): own solution architecture, delivery standards, and multi-country engineering teams across concurrent engagements.',
+      'Report to the president and lead initiatives that grow the Data & Reporting practice, including hiring, solution architecture, and delivery standards across concurrent PE-backed SaaS engagements (500+ employee clients).',
       'Deliver board-level visibility into ARR, renewals, and operating KPIs by consolidating Salesforce, billing, and finance data into governed data warehouses and reporting layers.',
       'Led data migration remediation for a $1B SaaS company: recovered missed billings, consolidated duplicate subscriptions, corrected invalid pricing, and established ongoing data-quality governance.',
       'Designed a repeatable Salesforce account de-duplication system and ran a phased rollout that pre-measured and managed its impact on key business metrics.',
@@ -246,7 +246,7 @@ export const skills: SkillGroup[] = [
   {
     name: 'Leadership',
     items: [
-      'Practice leadership',
+      'Practice growth & hiring',
       'PE portfolio-company advisory',
       'Board & executive reporting',
       'Offshore team management',
